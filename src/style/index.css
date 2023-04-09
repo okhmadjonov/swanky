@@ -22,11 +22,12 @@
   
   body {
     margin: 0 auto;
-    max-width: 1420px;
+    /* max-width: 1420px; */
     height: 100%;
     font-family: 'Syne', sans-serif;
     caret-color: transparent !important;
   }
   a{
     text-decoration: none;
+    cursor: pointer;
   }

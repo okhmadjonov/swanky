@@ -1,0 +1,97 @@
+.header {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  z-index: 110;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.7);
+  .header__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1420px;
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    align-items: center;
+    nav {
+      position: absolute;
+      width: 100%;
+      height: 54px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      z-index: 111;
+      //   border: 1px solid black;
+      .menu {
+        width: 442px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .menu__link {
+          height: 18px;
+          font-family: "Syne";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #fff;
+          &:hover {
+            transition: all 1ms ease-in-out;
+            border-bottom: 2px solid #fff;
+          }
+        }
+      }
+      .logo {
+        width: 141px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .login__search__like__cart {
+        width: 366px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+          height: 18px;
+          font-family: "Syne";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 17px;
+          letter-spacing: 0.02em;
+          text-transform: uppercase;
+          color: #fff;
+          display: flex;
+          gap: 5px;
+          &:hover {
+            transition: all 1ms ease-in-out;
+            border-bottom: 2px solid #fff;
+          }
+        }
+        .login {
+          //   height: 18px;
+        }
+        .search {
+          //   height: 18px;
+        }
+        .like {
+          //   height: 18px;
+        }
+        .cart {
+          //   height: 18px;
+        }
+      }
+    }
+  }
+}
