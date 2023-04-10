@@ -1,0 +1,73 @@
+.banner {
+  width: 100%;
+  max-width: 1920px;
+  height: 926px;
+  background-image: url("../../assets/images/home/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  .banner__container {
+    width: 100%;
+    height: 100%;
+    max-width: 1420px;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .banner__wrapper {
+      width: 799px;
+      height: 242px;
+      margin-top: 75px;
+
+      .banner__title {
+        width: 100%;
+        height: 168px;
+        display: flex;
+        align-items: center;
+
+        h3 {
+          width: 100%;
+          font-family: "Syne";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 73px;
+          line-height: 115%;
+          text-align: center;
+          letter-spacing: 0.02em;
+          text-transform: capitalize;
+          color: #ffffff;
+        }
+      }
+      .banner__btn {
+        width: 100%;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        button {
+          cursor: pointer;
+          width: 187px;
+          height: 38px;
+          display: flex;
+          align-items: center;
+          background-color: #fff;
+          font-family: "DM Sans", sans-serif;
+          border: none;
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 18px;
+          letter-spacing: 0.12em;
+          text-transform: uppercase;
+          color: #040404;
+          margin-top: 30px;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
