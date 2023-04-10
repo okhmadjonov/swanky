@@ -1,33 +1,25 @@
 import React from "react";
 import "./trends.scss";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 import { AiOutlineHeart } from "react-icons/ai";
 import { IoScan } from "react-icons/io5";
 import trend_1 from "../../../../assets/images/trends/trend_1.png";
 import trend_2 from "../../../../assets/images/trends/trend_2.png";
 import trend_3 from "../../../../assets/images/trends/trend_3.png";
 import trend_4 from "../../../../assets/images/trends/trend_4.png";
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 4,
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 2,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2,
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1,
-  },
-};
+
 const Trends = () => {
+  const settings = {
+    // dots: true,
+    // infinite: true,
+    // speed: 1000,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+  };
   return (
     <div className="trends">
       <div className="trends__container">
@@ -40,7 +32,7 @@ const Trends = () => {
           </div>
           <div className="trends__items">
             <div className="items__container">
-              {/* <Carousel responsive={responsive}> */}
+              {/* <Slider {...settings}> */}
               <div className="item">
                 <div className="item_img">
                   <img src={trend_1} alt="Trend 1" />
@@ -137,7 +129,9 @@ const Trends = () => {
                   </div>
                 </div>
               </div>
-              {/* </Carousel> */}
+              {/* REPEAT */}
+
+              {/* </Slider> */}
             </div>
           </div>
         </div>

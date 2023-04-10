@@ -3,6 +3,7 @@ import "./home.scss";
 import Banner from "./components/Banner/Banner";
 import Services from "./components/Services/Services";
 import Trends from "./components/Trends/Trends";
+import Video from "./components/Video/Video";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Banner />
       <Services />
       <Trends />
+      <Video />
     </div>
   );
 };
