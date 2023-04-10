@@ -1,0 +1,185 @@
+.trends {
+  width: 100%;
+  height: 690px;
+  max-width: 1920px;
+  margin: 150px auto;
+  .trends__container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    .trends__wrapper {
+      width: 100%;
+      height: 100%;
+
+      .trends__top {
+        width: 100%;
+        max-width: 1420px;
+        margin: 0 auto;
+        height: 94px;
+
+        h3 {
+          width: 100%;
+          height: 80%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-family: "Syne";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 52px;
+          line-height: 62px;
+          text-align: center;
+          text-transform: capitalize;
+          color: #040404;
+        }
+        p {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          justify-content: center;
+          font-family: "DM Sans";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 160%;
+          text-align: center;
+          color: #737373;
+        }
+      }
+      .trends__items {
+        width: 100%;
+        margin-top: 50px;
+        height: 478px;
+
+        .items__container {
+          width: 100%;
+          max-width: 1420px;
+          height: 100%;
+          margin: 0 auto;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          color: #040404;
+
+          .item {
+            width: 340px;
+            height: 100%;
+            cursor: pointer;
+            .item_img {
+              width: 100%;
+              height: 424px;
+              position: relative;
+              overflow: hidden;
+              .item_img-hover {
+                position: absolute;
+                width: 300px;
+                height: 48px;
+                z-index: 100;
+                margin: 0 auto;
+                left: 6%;
+                bottom: 4%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                display: none;
+                .trend__hover__btn {
+                  width: 190px;
+                  height: 100%;
+                  border: none;
+                  background-color: #fff;
+                  cursor: pointer;
+                  button {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    background-color: #fff;
+                    cursor: pointer;
+                    font-family: "DM Sans";
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0.12em;
+                    text-transform: uppercase;
+
+                    color: #040404;
+                  }
+                }
+                .tren__hover__heart {
+                  width: 48px;
+                  height: 48px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: #fff;
+                  color: #040404;
+                }
+                .tren__hover__scan {
+                  width: 48px;
+                  height: 48px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: #fff;
+                  color: #040404;
+                }
+              }
+              &:hover {
+                .item_img-hover {
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  transition: ease-in-out;
+                }
+              }
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+            .item_text {
+              width: 100%;
+              height: 50px;
+              .item__text-title {
+                width: 100%;
+                height: 60%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                h3 {
+                  font-family: "Syne";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 22px;
+                  line-height: 26px;
+                  text-align: center;
+                  text-transform: capitalize;
+                  color: #040404;
+                }
+              }
+              .item__text-subtitle {
+                width: 100%;
+                height: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p {
+                  font-family: "DM Sans";
+                  font-style: normal;
+                  font-weight: 700;
+                  font-size: 14px;
+                  line-height: 18px;
+                  letter-spacing: 0.02em;
+                  color: #ec6c5a;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
